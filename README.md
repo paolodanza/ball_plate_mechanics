@@ -1,68 +1,34 @@
-Controllo Dinamico di un Sistema Meccanico (Ball-Plate Control)
+Dynamic Control of a Mechanical System (Ball-Plate Control)
 
+This project focuses on the development and simulation of a control system for a mobile platform (Plate) using the MATLAB/Simulink environment. The repository includes mathematical modeling, Ordinary Differential Equation (ODE) integration functions, and simulation models for both open-loop and closed-loop control logic.
+🛠 Technologies Used
 
+    MATLAB: For numerical analysis and ODE function definitions.
 
-Questo progetto sviluppa e simula un sistema di controllo per una piattaforma mobile (Plate) utilizzando l'ambiente MATLAB/Simulink. Il repository include la modellistica matematica, le funzioni di integrazione delle equazioni differenziali (ODE) e i modelli di simulazione con e senza logica di controllo.
+    Simulink: For block diagram modeling and dynamic system simulation.
 
-🛠 Tecnologie Utilizzate
+    Simscape (where applicable): For physical modeling of mechanical components.
 
+📂 Repository Structure
 
+    Model.slx: Main Simulink model of the system.
 
-&nbsp;   MATLAB: Per l'analisi numerica e la definizione delle funzioni ODE.
+    ode_fun.m / omega_ode_fun.m: MATLAB functions defining the system's differential equations.
 
+    corsa2024A.slx: Model variant for specific testing scenarios.
 
+    progetto_prova_plate_nocontrollo.slx: Baseline model for open-loop system analysis.
 
-&nbsp;   Simulink: Per la modellazione a blocchi e la simulazione del sistema dinamico.
+    progetto_prova_plate_nocontrollo_subsystems.slx: Modularized version of the open-loop model.
 
+    validazione.m: Script for comparing simulated data with expected results.
 
+🚀 How to Run the Simulation
 
-&nbsp;   Simscape (se applicabile): Per la modellazione fisica dei componenti.
+    Ensure MATLAB and Simulink are installed.
 
+    Open MATLAB and navigate to the project folder.
 
+    Run the validazione.m script to load the required parameters into the Workspace.
 
-📂 Struttura del Repository
-
-
-
-&nbsp;   Model.slx: Modello Simulink principale del sistema.
-
-
-
-&nbsp;   ode\_fun.m / omega\_ode\_fun.m: Funzioni MATLAB che definiscono le equazioni differenziali del sistema.
-
-
-
-&nbsp;   corsa2024A.slx: Variante del modello per scenari di test specifici.
-
-
-
-&nbsp;   progetto\_prova\_plate\_nocontrollo.slx: Modello di base per l'analisi del sistema in anello aperto (open-loop).
-
-
-
-&nbsp;   progetto\_prova\_plate\_nocontrollo\_subsystems.slx: Versione modularizzata del modello senza controllo.
-
-
-
-&nbsp;   validazione.m: Script per il confronto tra i dati simulati e i risultati attesi.
-
-
-
-🚀 Come Eseguire la Simulazione
-
-
-
-&nbsp;   Assicurarsi di avere MATLAB e Simulink installati.
-
-
-
-&nbsp;   Aprire MATLAB e posizionarsi nella cartella del progetto.
-
-
-
-&nbsp;   Eseguire lo script validazione.m per caricare i parametri necessari nello Workspace.
-
-
-
-&nbsp;   Aprire il file Model.slx e avviare la simulazione cliccando su Run.
-
+    Open the Model.slx file and start the simulation by clicking Run.
